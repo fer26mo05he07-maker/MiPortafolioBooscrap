@@ -1,0 +1,361 @@
+
+/* CONFIGURACIÓN GENERAL */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+    scroll-padding-top: 80px;
+}
+
+body {
+    font-family: 'Montserrat', sans-serif;
+    background-color: #f5f7fa;
+    color: #333;
+    line-height: 1.7;
+}
+
+h1, h2, h3, h4 {
+    font-family: 'Playfair Display', serif;
+}
+
+p {
+    margin-bottom: 15px;
+}
+
+
+/* ENCABEZADO Y NAVEGACIÓN */
+
+header {
+    background-color: #4141ef;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+.navbar {
+    padding: 14px 0;
+}
+
+.navbar-brand {
+    font-size: 24px;
+}
+
+.navbar .nav-link {
+    color: white;
+    font-weight: 600;
+    margin-left: 8px;
+    transition: color 0.3s;
+}
+
+.navbar .nav-link:hover,
+.navbar .nav-link:focus {
+    color: #a8d8ff;
+}
+
+
+/* SECCIONES GENERALES */
+
+.seccion {
+    padding: 70px 0;
+}
+
+.fondo-claro {
+    background-color: #eef2fb;
+}
+
+.titulo-seccion {
+    color: #1f3c88;
+    font-size: 34px;
+    text-align: center;
+    margin-bottom: 35px;
+    font-weight: 700;
+}
+
+
+/* PRESENTACIÓN */
+
+.inicio {
+    background: linear-gradient(135deg, #eef4ff, #ffffff);
+    min-height: 480px;
+    display: flex;
+    align-items: center;
+}
+
+.saludo {
+    color: #1f3c88;
+    font-family: 'Pacifico', cursive;
+    font-size: 24px;
+    margin-bottom: 5px;
+}
+
+.inicio h1 {
+    color: #1f3c88;
+    font-size: clamp(38px, 5vw, 55px);
+    font-weight: 700;
+    margin-bottom: 15px;
+}
+
+.subtitulo {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 21px;
+    color: #555;
+    margin-bottom: 20px;
+}
+
+.inicio p {
+    font-size: 16px;
+}
+
+.foto-perfil {
+    width: 280px;
+    height: 280px;
+    object-fit: cover;
+    border-radius: 50%;
+    border: 8px solid white;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.15);
+}
+
+
+/* BOTONES */
+
+.boton-principal {
+    background-color: #1f3c88;
+    color: white;
+    border: none;
+    padding: 12px 25px;
+    border-radius: 8px;
+    font-weight: 600;
+    transition: background-color 0.3s, transform 0.3s;
+}
+
+.boton-principal:hover {
+    background-color: #162d66;
+    color: white;
+    transform: translateY(-2px);
+}
+
+
+/* TARJETAS */
+
+.tarjeta {
+    background-color: white;
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.07);
+    height: 100%;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.tarjeta:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.12);
+}
+
+.tarjeta h3 {
+    color: #1f3c88;
+    font-size: 22px;
+    margin-bottom: 15px;
+}
+
+.tarjeta h4 {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 16px;
+    font-weight: 600;
+    margin-bottom: 15px;
+}
+
+
+/* ICONOS */
+
+.icono {
+    display: inline-block;
+    color: #4141ef;
+    font-size: 40px;
+    margin-bottom: 15px;
+}
+
+
+/* HABILIDADES Y PROYECTOS */
+
+.habilidad,
+.proyecto {
+    text-align: center;
+}
+
+.proyecto span {
+    display: inline-block;
+    margin-top: 10px;
+    color: #1f3c88;
+    font-size: 13px;
+    font-weight: 700;
+}
+
+
+/* VIDEO */
+
+.video-proyecto {
+    max-width: 850px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.video-proyecto h3 {
+    color: #1f3c88;
+    text-align: center;
+    margin-bottom: 12px;
+}
+
+.video-proyecto > p {
+    text-align: center;
+}
+
+.video-marco {
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.15);
+}
+
+
+/* FORMULARIO */
+
+.formulario {
+    background-color: white;
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
+}
+
+.formulario .form-control {
+    padding: 12px;
+    border: 1px solid #ccc;
+}
+
+.formulario .form-control:focus {
+    border-color: #4141ef;
+    box-shadow: 0 0 0 0.2rem rgba(65, 65, 239, 0.15);
+}
+
+.formulario label {
+    font-weight: 600;
+}
+
+.nota-formulario {
+    color: #666;
+    font-size: 12px;
+    margin-top: 15px;
+    margin-bottom: 0;
+}
+
+
+/* PIE DE PÁGINA */
+
+.pie-pagina {
+    background-color: #172554;
+    color: white;
+    text-align: center;
+    padding: 40px 0 20px;
+}
+
+.pie-pagina h2 {
+    font-size: 27px;
+    margin-bottom: 12px;
+}
+
+.pie-pagina h3 {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 19px;
+}
+
+.pie-pagina audio {
+    display: block;
+    width: 320px;
+    max-width: 100%;
+    margin: 20px auto;
+}
+
+.redes {
+    display: flex;
+    justify-content: center;
+    gap: 25px;
+    margin: 20px 0;
+}
+
+.redes a {
+    color: white;
+    font-size: 32px;
+    text-decoration: none;
+    transition: color 0.3s, transform 0.3s;
+}
+
+.redes a:hover {
+    color: #a8d8ff;
+    transform: scale(1.15);
+}
+
+.copyright {
+    font-size: 13px;
+    margin-top: 25px;
+    margin-bottom: 0;
+}
+
+
+/* TABLET */
+
+@media (max-width: 991px) {
+    .navbar .nav-link {
+        margin-left: 0;
+        padding: 10px 0;
+    }
+
+    .seccion {
+        padding: 55px 0;
+    }
+
+    .foto-perfil {
+        width: 240px;
+        height: 240px;
+    }
+}
+
+
+/* CELULAR */
+
+@media (max-width: 575px) {
+    .seccion {
+        padding: 45px 0;
+    }
+
+    .titulo-seccion {
+        font-size: 29px;
+    }
+
+    .inicio {
+        text-align: center;
+    }
+
+    .inicio h1 {
+        font-size: 39px;
+    }
+
+    .subtitulo {
+        font-size: 18px;
+    }
+
+    .foto-perfil {
+        width: 210px;
+        height: 210px;
+    }
+
+    .tarjeta {
+        padding: 22px;
+    }
+
+    .formulario {
+        padding: 22px;
+    }
+}
